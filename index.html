@@ -3,75 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Amitesh Surwar">
-    <title>Amitesh Surwar | Personal Website</title>
+    <meta name="description" content="Full Stack Software Developer with 7+ years of experience specializing in .NET Core, microservices, and scalable backend systems.">
+    <meta name="author" content="Amitesh Surwar">
+    <meta name="keywords" content="Full Stack Developer, Backend Engineer, .NET Core, C#, TypeScript, Microservices, Bengaluru">
+    <title>Amitesh Surwar | Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">AS</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">AS</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu-desktop">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                    <li><a href="#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn-resume">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#about" class="mobile-nav-link"><span class="nav-number">01.</span> About</a></li>
+                <li><a href="#experience" class="mobile-nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link"><span class="nav-number">04.</span> Contact</a></li>
             </ul>
+            <a href="#contact" class="btn-resume-mobile">Resume</a>
         </div>
-    </nav>
+    </header>
+
+    <!-- Social Sidebars -->
+    <div class="social-sidebar social-sidebar-left">
+        <a href="https://github.com/amitesh0512" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/amitesh-surwar-6786414" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+        </a>
+        <a href="mailto:amitesh.surwar@gmail.com" aria-label="Email" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+        </a>
+        <div class="social-line"></div>
+    </div>
+
+    <div class="social-sidebar social-sidebar-right">
+        <a href="mailto:amitesh.surwar@gmail.com" class="email-link">amitesh.surwar@gmail.com</a>
+        <div class="social-line"></div>
+    </div>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Amitesh Surwar</span>
-                </h1>
-                <p class="hero-subtitle">Full Stack Software Developer | .NET Core | Angular | Cloud Solutions</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <div class="container">
+                <p class="hero-intro animate-fade-in">Hi, my name is</p>
+                <h1 class="hero-name animate-fade-in-delay-1">Amitesh Surwar.</h1>
+                <h2 class="hero-tagline animate-fade-in-delay-2">I build things for the web.</h2>
+                <p class="hero-description animate-fade-in-delay-3">
+                    I'm a Full Stack Software Developer with <span class="text-primary">7+ years</span> of experience 
+                    specializing in building scalable backend services, REST APIs, and microservices. 
+                    Currently focused on creating reliable, high-performance applications at{' '}
+                    <a href="#" class="link-underline">Devon Software Services</a>.
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-4">
+                    <a href="#projects" class="btn btn-outline">View My Work</a>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Resume
+                    </a>
                 </div>
             </div>
             <div class="scroll-indicator">
-                <span>Scroll down</span>
-                <div class="arrow"></div>
+                <a href="#about" class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
+                <h2 class="section-heading" data-number="01.">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-content">
                         <p>
-                            Dynamic professional committed to contributing to an organization that fosters 
-                            a culture of freedom and innovation. Focused on aligning personal initiatives 
-                            with the company's vision to drive impactful results through strategic thinking 
-                            and proactive actions.
+                            Hello! I'm Amitesh, a Full Stack Engineer based in <span class="text-primary">Bengaluru, India</span>. 
+                            I enjoy building scalable backend systems and creating seamless user experiences. 
+                            My passion for software development started during my engineering studies and has 
+                            evolved into a fulfilling career spanning multiple domains.
                         </p>
                         <p>
-                            Eager to play a pivotal role in organizational growth while pursuing continuous 
-                            self-development and professional excellence. Passionate about collaborating with 
-                            teams to create meaningful change and achieve shared goals.
+                            Currently at <span class="text-primary">Devon Software Services</span>, I build and maintain 
+                            RESTful services and microservices using C#, .NET Core, and EF Core. I've reduced query times by 30% 
+                            through schema modeling and optimization, and boosted new user signups by 15% through analytics on new APIs.
                         </p>
-                        <div class="skills-section">
-                            <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--text-primary);">Technical Skills</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <strong>Programming Languages:</strong> C#, .NET Core, .NET Framework, Node.js, TypeScript, Angular
-                                </div>
-                                <div class="skill-category">
-                                    <strong>Databases:</strong> MySQL, MongoDB, MSSQL, PostgreSQL, Cosmos DB, Influx DB
-                                </div>
-                                <div class="skill-category">
-                                    <strong>Cloud & DevOps:</strong> Azure, AWS, DigitalOcean, Docker, Nginx, Service Fabric
-                                </div>
-                                <div class="skill-category">
-                                    <strong>Frameworks & Tools:</strong> Entity Framework, EF Core, Express.js, REST APIs, Git, SwaggerHub
-                                </div>
+                        <p>
+                            Over the years, I've had the privilege of working at{' '}
+                            <a href="#" class="link-underline">Accenture Singapore</a>,{' '}
+                            <a href="#" class="link-underline">Integration Wizards</a>, and various 
+                            innovative startups. My focus has been on designing <span class="text-primary">microservices</span>, 
+                            optimizing database performance, and implementing robust CI/CD pipelines.
+                        </p>
+                        <p>
+                            I'm certified as a <span class="text-primary">Red Hat Certified Engineer (RHCE)</span> and 
+                            continuously explore new technologies to stay at the forefront of software development.
+                        </p>
+                        <p class="skills-intro">Here are some technologies I've been working with recently:</p>
+                        <ul class="skills-list">
+                            <li><span class="skill-arrow">▹</span> C#</li>
+                            <li><span class="skill-arrow">▹</span> .NET Core</li>
+                            <li><span class="skill-arrow">▹</span> TypeScript</li>
+                            <li><span class="skill-arrow">▹</span> Node.js</li>
+                            <li><span class="skill-arrow">▹</span> Angular</li>
+                            <li><span class="skill-arrow">▹</span> REST APIs</li>
+                            <li><span class="skill-arrow">▹</span> SQL Server</li>
+                            <li><span class="skill-arrow">▹</span> PostgreSQL</li>
+                            <li><span class="skill-arrow">▹</span> MongoDB</li>
+                            <li><span class="skill-arrow">▹</span> Azure</li>
+                            <li><span class="skill-arrow">▹</span> AWS</li>
+                            <li><span class="skill-arrow">▹</span> Docker</li>
+                            <li><span class="skill-arrow">▹</span> Microservices</li>
+                            <li><span class="skill-arrow">▹</span> Entity Framework</li>
+                            <li><span class="skill-arrow">▹</span> Git</li>
+                            <li><span class="skill-arrow">▹</span> CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <div class="profile-image-placeholder">
+                                <span>AS</span>
+                            </div>
+                            <div class="image-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-heading" data-number="02.">Where I've Worked</h2>
+                <div class="experience-wrapper">
+                    <div class="experience-tabs">
+                        <button class="experience-tab active" data-tab="0">Devon Software</button>
+                        <button class="experience-tab" data-tab="1">Accenture</button>
+                        <button class="experience-tab" data-tab="2">Integration Wizards</button>
+                        <button class="experience-tab" data-tab="3">EdisonEdge</button>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-panel active" data-panel="0">
+                            <h3 class="experience-title">Full Stack Software Developer <span class="text-primary">@ Devon Software</span></h3>
+                            <p class="experience-period font-mono">May 2023 - Present • Bengaluru</p>
+                            <ul class="experience-points">
+                                <li><span class="point-arrow">▹</span> Built and maintained RESTful services and microservices using C#, .NET Core, and EF Core</li>
+                                <li><span class="point-arrow">▹</span> Reduced heavy query times by 30% through schema modeling and query optimization in SQL Server and PostgreSQL</li>
+                                <li><span class="point-arrow">▹</span> Strengthened code quality via unit tests, PR reviews, and static analysis, lowering defects by 25%</li>
+                                <li><span class="point-arrow">▹</span> Launched analytics on new APIs boosting new user signups by 15% over three months</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Entity Framework</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Angular</span>
+                            </div>
+                        </div>
+                        <div class="experience-panel" data-panel="1">
+                            <h3 class="experience-title">Backend Engineer <span class="text-primary">@ Accenture</span></h3>
+                            <p class="experience-period font-mono">Aug 2021 - Jan 2023 • Singapore</p>
+                            <ul class="experience-points">
+                                <li><span class="point-arrow">▹</span> Developed high-throughput backend services in .NET Core with MSSQL for large data processing</li>
+                                <li><span class="point-arrow">▹</span> Scaled backend services to support peak loads of 2.5M requests/hour achieving 99.95% uptime</li>
+                                <li><span class="point-arrow">▹</span> Implemented batched processing reducing cloud costs by 18%, saving $24K annually</li>
+                                <li><span class="point-arrow">▹</span> Utilized Azure Functions and event-driven patterns to decouple workloads</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">MSSQL</span>
+                                <span class="tech-badge">Azure Functions</span>
+                                <span class="tech-badge">xUnit</span>
+                                <span class="tech-badge">Microservices</span>
+                            </div>
+                        </div>
+                        <div class="experience-panel" data-panel="2">
+                            <h3 class="experience-title">Mobility Consultant <span class="text-primary">@ Integration Wizards</span></h3>
+                            <p class="experience-period font-mono">Sep 2019 - Mar 2021 • Bengaluru</p>
+                            <ul class="experience-points">
+                                <li><span class="point-arrow">▹</span> Engineered backend components in C#/.NET with Entity Framework for diverse data sources</li>
+                                <li><span class="point-arrow">▹</span> Designed data models in MSSQL and Cosmos DB for analytics and dashboarding</li>
+                                <li><span class="point-arrow">▹</span> Built and deployed services on Azure Service Fabric improving availability</li>
+                                <li><span class="point-arrow">▹</span> Tuned performance for large-scale telemetry reducing query latency by 25%</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-badge">.NET Framework</span>
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">Cosmos DB</span>
+                                <span class="tech-badge">Elasticsearch</span>
+                                <span class="tech-badge">InfluxDB</span>
+                                <span class="tech-badge">Azure</span>
+                            </div>
+                        </div>
+                        <div class="experience-panel" data-panel="3">
+                            <h3 class="experience-title">Software Developer <span class="text-primary">@ EdisonEdge</span></h3>
+                            <p class="experience-period font-mono">Sep 2018 - Aug 2019 • Bengaluru</p>
+                            <ul class="experience-points">
+                                <li><span class="point-arrow">▹</span> Developed Node.js backend with TypeScript, Express, and MongoDB for real-time gaming platform</li>
+                                <li><span class="point-arrow">▹</span> Implemented automated tests and API specs on SwaggerHub improving quality</li>
+                                <li><span class="point-arrow">▹</span> Managed Dockerized deployments and Nginx configurations improving reliability</li>
+                                <li><span class="point-arrow">▹</span> Enhanced runtime stability reducing defects by 30% through monitoring</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Express</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Angular</span>
                             </div>
                         </div>
                     </div>
@@ -79,114 +259,239 @@
             </div>
         </section>
 
-        <section id="projects" class="section section-alt">
+        <!-- Projects Section -->
+        <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-icon">☁️</div>
-                        <h3 class="project-title">CPF Blue Skies</h3>
-                        <p class="project-company">Accenture Singapore | Backend Engineer</p>
-                        <p class="project-description">
-                            Worked on payroll system backend handling key components for loading huge data 
-                            in the server. Implemented backend solutions using .NET Core and MSSQL with 
-                            comprehensive unit testing in XUnit.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">.NET Core</span>
-                            <span class="tech-tag">MSSQL</span>
-                            <span class="tech-tag">Azure Functions</span>
-                            <span class="tech-tag">XUnit</span>
-                            <span class="tech-tag">Microservices</span>
+                <h2 class="section-heading" data-number="03.">Some Things I've Built</h2>
+                
+                <!-- Featured Projects -->
+                <div class="featured-projects">
+                    <div class="featured-project">
+                        <div class="project-image-left">
+                            <div class="project-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <p class="project-company-label font-mono">Devon Software Services</p>
+                            <h3 class="project-title">Exact Expense Management</h3>
+                            <div class="project-description-box">
+                                <p>Built and maintained RESTful services and microservices using C#, .NET Core, and EF Core. Reduced heavy query times by 30% through schema modeling and query optimization. Launched analytics boosting new user signups by 15%.</p>
+                            </div>
+                            <ul class="project-tech-list font-mono">
+                                <li>C#</li>
+                                <li>.NET Core</li>
+                                <li>Entity Framework</li>
+                                <li>SQL Server</li>
+                                <li>PostgreSQL</li>
+                                <li>Angular</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-icon">💰</div>
-                        <h3 class="project-title">CAMS</h3>
-                        <p class="project-company">Akeo Software Solutions | Software Engineer</p>
-                        <p class="project-description">
-                            Developed a financial application for the African region (Wakandi) enabling 
-                            customers to apply for loans and check loan details. Built full-stack solution 
-                            with .NET Core backend and Angular frontend.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">.NET Core</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">XUnit</span>
-                            <span class="tech-tag">Microservices</span>
+
+                    <div class="featured-project featured-project-reverse">
+                        <div class="project-image-right">
+                            <div class="project-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content-left">
+                            <p class="project-company-label font-mono">Accenture Singapore</p>
+                            <h3 class="project-title">CPF Blue Skies</h3>
+                            <div class="project-description-box">
+                                <p>Large-scale backend initiative focused on loading and processing high-volume data. Increased data load throughput by 10% by optimizing bulk operations and batching strategies.</p>
+                            </div>
+                            <ul class="project-tech-list font-mono">
+                                <li>.NET Core</li>
+                                <li>MSSQL</li>
+                                <li>Azure Functions</li>
+                                <li>Azure</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-icon">📊</div>
-                        <h3 class="project-title">IRIS</h3>
-                        <p class="project-company">Integration Wizards Solutions | Mobility Consultant</p>
-                        <p class="project-description">
-                            Developed a comprehensive resource management platform serving Retail, Warehouses, 
-                            Industrial Machines, Hospitals, and Airports. Created APIs for data processing 
-                            and visualization dashboards with focus on performance tuning and resource scaling.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">.NET Framework</span>
-                            <span class="tech-tag">MSSQL</span>
-                            <span class="tech-tag">Cosmos DB</span>
-                            <span class="tech-tag">Elastic Search</span>
-                            <span class="tech-tag">Influx DB</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Service Fabric</span>
+
+                    <div class="featured-project">
+                        <div class="project-image-left">
+                            <div class="project-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <p class="project-company-label font-mono">Akeo Software (Wakandi)</p>
+                            <h3 class="project-title">CAMS Financial Platform</h3>
+                            <div class="project-description-box">
+                                <p>Financial application enabling customers to apply for loans and track loan details. Reduced API latency by 15% through query tuning and caching, boosting conversion in loan flows.</p>
+                            </div>
+                            <ul class="project-tech-list font-mono">
+                                <li>.NET Core</li>
+                                <li>MySQL</li>
+                                <li>Angular</li>
+                                <li>xUnit</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-icon">🎮</div>
-                        <h3 class="project-title">KwizKing</h3>
-                        <p class="project-company">EdisonEdge Software Solutions | Software Developer</p>
-                        <p class="project-description">
-                            Built an online quiz gaming platform from scratch. Designed and developed the 
-                            backend using TypeScript, Node.js, and MongoDB. Implemented game engine, user 
-                            account system, and deployed Docker-based microservices on cloud infrastructure.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Microservices</span>
+
+                    <div class="featured-project featured-project-reverse">
+                        <div class="project-image-right">
+                            <div class="project-image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
                         </div>
+                        <div class="project-content-left">
+                            <p class="project-company-label font-mono">Integration Wizards</p>
+                            <h3 class="project-title">IRIS Analytics Platform</h3>
+                            <div class="project-description-box">
+                                <p>Analytics platform serving retail, hospitals, airports, and industrial clients. Scaled data ingestion to handle large telemetry streams with optimized Elasticsearch queries.</p>
+                            </div>
+                            <ul class="project-tech-list font-mono">
+                                <li>.NET</li>
+                                <li>Cosmos DB</li>
+                                <li>Elasticsearch</li>
+                                <li>InfluxDB</li>
+                                <li>Azure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Projects -->
+                <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                <div class="other-projects-grid">
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="project-folder-icon">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <div class="project-links">
+                                <a href="#" class="project-link-icon" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link-icon" aria-label="External Link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">KwizKing Gaming Platform</h4>
+                        <p class="other-project-description">Online quiz gaming platform with real-time features, containerized deployments, and automated testing.</p>
+                        <ul class="other-project-tech font-mono">
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>MongoDB</li>
+                            <li>Docker</li>
+                            <li>Angular</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="project-folder-icon">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <div class="project-links">
+                                <a href="#" class="project-link-icon" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link-icon" aria-label="External Link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">API Performance Optimizer</h4>
+                        <p class="other-project-description">Tool for analyzing and optimizing REST API performance with indexing and caching strategies.</p>
+                        <ul class="other-project-tech font-mono">
+                            <li>C#</li>
+                            <li>.NET Core</li>
+                            <li>SQL Server</li>
+                            <li>Redis</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-project-card">
+                        <div class="other-project-header">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="project-folder-icon">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <div class="project-links">
+                                <a href="#" class="project-link-icon" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link-icon" aria-label="External Link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="other-project-title">Microservices Template</h4>
+                        <p class="other-project-description">Boilerplate for building scalable microservices with proper patterns and CI/CD integration.</p>
+                        <ul class="other-project-tech font-mono">
+                            <li>.NET Core</li>
+                            <li>Docker</li>
+                            <li>Azure</li>
+                            <li>GitHub Actions</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="contact-content">
-                    <p class="contact-text">
-                        I'm always open to discussing new projects, creative ideas, or 
-                        opportunities to be part of your visions.
+                <div class="contact-wrapper">
+                    <p class="contact-intro font-mono">04. What's Next?</p>
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <p class="contact-description">
+                        I'm currently open to new opportunities and always excited to connect with 
+                        fellow developers and potential collaborators. Whether you have a question 
+                        or just want to say hi, my inbox is always open!
                     </p>
-                    <div class="contact-info">
-                        <p style="margin-bottom: 1rem; color: var(--text-secondary);">
-                            <strong>Email:</strong> <a href="mailto:amitesh.surwar@gmail.com" style="color: var(--primary-color); text-decoration: none;">amitesh.surwar@gmail.com</a>
-                        </p>
-                        <p style="margin-bottom: 2rem; color: var(--text-secondary);">
-                            <strong>Location:</strong> Bangalore, Karnataka, India
-                        </p>
+                    <div class="contact-info-row">
+                        <div class="contact-info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Bengaluru, India</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+91 9470522090</span>
+                        </div>
                     </div>
-                    <div class="contact-links">
-                        <a href="https://github.com/amitesh0512" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <span class="contact-icon">🔗 GitHub</span>
-                        </a>
-                        <a href="mailto:amitesh.surwar@gmail.com" class="contact-link">
-                            <span class="contact-icon">✉️ Email</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/amitesh-surwar-6786414" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <span class="contact-icon">💼 LinkedIn</span>
-                        </a>
-                    </div>
+                    <a href="mailto:amitesh.surwar@gmail.com" class="btn btn-primary btn-large glow-effect">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Say Hello
+                    </a>
                 </div>
             </div>
         </section>
@@ -194,7 +499,9 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Amitesh Surwar. All rights reserved.</p>
+            <p class="font-mono text-sm text-muted-foreground">
+                Built with ❤️ by Amitesh Surwar
+            </p>
         </div>
     </footer>
 
